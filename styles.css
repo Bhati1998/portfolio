@@ -1,0 +1,87 @@
+body {
+    width: 100%;
+}
+
+header {
+    display: inline-block;
+}
+
+.cg-logo {
+    height: 75px;
+}
+
+.proj-img {
+    width: 40%;
+}
+
+.hero-image {
+    background: url(https://images.pexels.com/photos/567584/nature-galaxy-milky-way-night-567584.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260) no-repeat top center;
+    background-size: cover;
+    width: 100%;
+    height: 500px;
+    margin-top: 0px;
+    position: relative;
+}
+
+.about-me {
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+#aboutme, #aboutme-txt {
+    padding: 10px;
+}
+
+.hero-title {
+    text-align: right;
+    color: white;
+    font-size: 2rem;
+    font-family: sans-serif;
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+}
+
+.pro-pic {
+    width: 200px;
+}
+
+.about-me, .tech-used, .my-projects {
+    text-align: center;
+}
+
+#tech-list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.js-img, .css-img, .html-img, .jq-img {
+    background: none;
+    width: 100px;
+}
+
+.about-me, .my-projects {
+    background: lightgray;
+}
+
+.tech-used {
+    background: white;
+}
+
+.js-contact-form {
+    display: block;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    height: 75px;
+    background: lightgray;
+}
+
+.linkedin-icon, .github-icon {
+    color: black;
+    padding: 10px;
+    margin: 10px 10px 10px 10px;
+}
