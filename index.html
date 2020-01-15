@@ -7,24 +7,28 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel='stylesheet' type='text/css' href='styles.css'>
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script&display=swap" rel="stylesheet">
     <title>Christian's Portfolio</title>
 </head>
 
 <body>
     <header class='nav-bar'>
-        <img class='cg-logo' src='/Users/christiangeorge/Documents/Projects/portfolio/cg-logo.png' alt="Main logo">
-        <ul>
+        <div class='signature-wrapper'>
+            <h3 class='signature'>Christian George</h3>
+        </div>
+        <ul class='nav-icons'>
             <li>
-                <a>About</a>
+                <a href='#about'>About</a>
             </li>
             <li>
-                <a>Skills</a>
+                <a href='#skills'>Skills</a>
             </li>
             <li>
-                <a>Portfolio</a>
+                <a href='#portfolio'>Portfolio</a>
             </li>
             <li>
-                <a>Contact</a>
+                <a href='#contact'>Contact</a>
             </li>
         </ul>
     </header>
@@ -37,42 +41,49 @@
             </div>
         </section>
         <section class='about-me'>
-            <h3 class='about-me' id='aboutme'>About</h3>
-            <p id='aboutme-txt'>I'm an web aspiring developer, book-lover, news junkie, and fantasy footblal enthusiast.
-                I use HTML5, CSS3, Javascript and Jquery to create web applications.</p>
-            <img class='pro-pic' src='/Users/christiangeorge/Documents/Projects/portfolio/folio-pic.jpg'
-                alt="profile picture">
+            <a name='about'></a>
+            <h3 id='aboutme'>About</h3>
+            <div>
+                <p id='aboutme-txt'>I'm an web aspiring developer, book-lover, news junkie, and fantasy footblal
+                    enthusiast.
+                    I use HTML5, CSS3, Javascript and Jquery to create web applications. Web development allows me to
+                    merge my passions of building and learning new things into exciting and intuitive designs.</p>
+                <img class='pro-pic' src='/Users/christiangeorge/Documents/Projects/portfolio/folio-pic.jpg'
+                    alt="profile picture">
+            </div>
         </section>
         <section class='tech-used'>
+            <a name='skills'></a>
             <h3>Skills</h3>
             <ul class='tech-list'>
                 <li>
                     <img class='html-img'
-                        src='https://p7.hiclipart.com/preview/185/866/361/html-web-design-scalable-vector-graphics-world-wide-web-markup-language-html5-icon-hd.jpg'
+                        src='tech-icons/html-logo.png'
                         alt='HTLM Icon'>
-                    HTML5
+                    <div class='skill-caption'>HTML5</div>
                 </li>
                 <li>
                     <img class='css-img'
-                        src='https://p1.hiclipart.com/preview/326/868/1022/css3-badge-blue-and-white-css-icon-png-clipart.jpg'
+                        src='tech-icons/css-logo.png'
                         alt='CSS Icon'>
-                    CSS3
+                        <div class='skill-caption'>CSS3</div>
                 </li>
                 <li>
                     <img class='js-img'
-                        src='https://p7.hiclipart.com/preview/793/545/309/javascript-portable-network-graphics-logo-clip-art-computer-icons-vue-js.jpg'
+                        src='tech-icons/js-logo.png'
                         alt='JS Icon'>
-                    Javascript
+                        <div class='skill-caption'>Javascript</div>
                 </li>
                 <li>
                     <img class='jq-img'
-                        src='https://p7.hiclipart.com/preview/404/35/811/jquery-mobile-javascript-library-ajax-programming-language-icon.jpg'
+                        src='tech-icons/jquery-logo.jpg'
                         alt='JQuery Icon'>
-                    JQuery
+                        <div class='skill-caption'>JQuery</div>
                 </li>
             </ul>
         </section>
         <section class='my-projects'>
+            <a name='portfolio'></a>
             <h3>Portfolio</h3>
             <div class='proj-one'>
                 <h5 class='project-title'>Game of Thrones Quiz App</h5>
@@ -83,28 +94,20 @@
                         Thrones</u> and the fantasy world he created. This quiz is based off of the books, so it's
                     unlikely a fan of only the HBO series would know some of these answers, but feel free to try anyway
                     and see how you score!</p>
-                <a href='https://github.com/christian-m-george/game-of-thrones-quiz-app' target='_blank'>Github</a>
-                <a href='https://christian-m-george.github.io/game-of-thrones-quiz-app/' target='blank'>Live</a>
+                <div class='button-wrapper'>
+                <a class='port-link' href='https://github.com/christian-m-george/game-of-thrones-quiz-app'
+                    target='_blank'>Github</a>
+                <a class='port-link' href='https://christian-m-george.github.io/game-of-thrones-quiz-app/'
+                    target='blank'>Live</a>
+                </div>
             </div>
         </section>
         <section class='contact-form'>
-            <h3>Contact Me</h3>
-            <form class='contact-form js-contact-form'>
-                <fieldset>
-                    <label for="Name">Name:</label>
-                    <input type="text" name="Name" id="Name" required />
-
-                    <label for="Subject">Subject:</label>
-                    <input type="text" name="Subject" id="Subject" required />
-
-                    <label for="Email">Email:</label>
-                    <input type="text" name="Email" id="Email" required />
-
-                    <label for="Message">Message:</label><br />
-                    <textarea name="Message" rows="20" cols="20" id="Message" required></textarea>
-                </fieldset>
-                <button type="submit" class="js-contact-submit">Submit</button>
-            </form>
+            <a name='contact'></a>
+            <div id="wufoo-z1bzeys501w4d59"> Fill out my <a
+                    href="https://christianmgeorge.wufoo.com/forms/z1bzeys501w4d59">online form</a>. </div>
+            <script
+                type="text/javascript"> var z1bzeys501w4d59; (function (d, t) { var s = d.createElement(t), options = { 'userName': 'christianmgeorge', 'formHash': 'z1bzeys501w4d59', 'autoResize': true, 'height': '517', 'async': true, 'host': 'wufoo.com', 'header': 'show', 'ssl': true }; s.src = ('https:' == d.location.protocol ? 'https://' : 'http://') + 'secure.wufoo.com/scripts/embed/form.js'; s.onload = s.onreadystatechange = function () { var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return; try { z1bzeys501w4d59 = new WufooForm(); z1bzeys501w4d59.initialize(options); z1bzeys501w4d59.display(); } catch (e) { } }; var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr); })(document, 'script'); </script>
         </section>
     </main>
     <footer class='bot-bar'>
