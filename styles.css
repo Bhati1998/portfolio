@@ -69,16 +69,11 @@ h3 {
 .about-me {
     margin-top: 0px;
     margin-bottom: 10px;
+    flex-direction: column;
 }
-
-/* .about-me div {
-    display: flex;
-} */
 
 .pro-pic {
     margin-bottom: 20px;
-    margin-left: 30px;
-    float: right;
 }
 
 #aboutme {
@@ -143,7 +138,6 @@ h3 {
 .contact-form {
     text-align: center;
     margin-bottom: 20px;
-    width: 50%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -179,4 +173,5 @@ footer {
     font-size: 1.2rem;
     }
 }
+
 
