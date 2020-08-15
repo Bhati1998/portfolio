@@ -104,15 +104,24 @@ h3 {
 }
 
 .skills-container .skills-container-images {
-    display: flex;
+    display: block;
     width: 100%;
     text-align: center;
 }
 
 .skills-container .skills-container-images figure {
-    width: 16%;
+    width: 12%;
     display: inline-block;
     margin-bottom: 2rem;
+}
+
+.skill-name img {
+    padding: 10px;
+}
+
+
+.postgres-img, .express-img {
+    width: 100%;
 }
 
 figcaption {
@@ -124,8 +133,13 @@ figcaption {
     background: lightgray;
 }
 
+.project-title {
+    margin-bottom: 1.5rem;
+    font-weight: bolder;
+}
+
 .proj-img-wrapper, .proj-text-wrapper {
-    width: 19%;
+    width: 49%;
     display: inline-block;
     padding: 20px;
     padding-top: 0px;
@@ -133,7 +147,7 @@ figcaption {
 }
 
 .proj-img-wrapper {
-    width: 80%;
+    width: 49%;
 }
 
 .proj-img {
