@@ -49,10 +49,6 @@ body {
     /* font-size: 20px; */
 }
 
-.proj-img {
-    width: 40%;
-}
-
 .hero-image {
     background: url(https://images.pexels.com/photos/567584/nature-galaxy-milky-way-night-567584.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260) no-repeat top center;
     background-size: cover;
@@ -72,21 +68,29 @@ h3 {
     flex-direction: column;
 }
 
-.pro-pic {
-    margin-bottom: 20px;
-}
-
 #aboutme {
     margin-top: 0;
     padding: 20px;
 }
 
-#aboutme-txt {
-    padding: 18px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: auto;
-    margin-bottom: auto;
+.about-pic-container-column, .about-text-container-column {
+    width: 19%;
+    display: inline-block;
+    padding: 20px;
+    padding-top: 0px;
+    vertical-align: top;
+}
+
+.about-text-container-column {
+    width: 80%;
+}
+
+.about-me, .tech-used, .my-projects {
+    text-align: center;
+}
+
+.pro-pic {
+    width: 100%;
 }
 
 .hero-title {
@@ -99,35 +103,46 @@ h3 {
     right: 1rem;
 }
 
-.pro-pic {
-    width: 200px;
-}
-
-.about-me, .tech-used, .my-projects {
+.skills-container .skills-container-images {
+    display: flex;
+    width: 100%;
     text-align: center;
 }
 
-.tech-list {
-    display: block;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.tech-list li {
-    list-style: none;
-    background: none;
-    padding: 20px;
+.skills-container .skills-container-images figure {
+    width: 16%;
     display: inline-block;
+    margin-bottom: 2rem;
 }
 
-.js-img, .css-img, .html-img, .jq-img {
-    width: 100px;
+figcaption {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 
 .about-me, .my-projects {
     background: lightgray;
 }
+
+.proj-img-wrapper, .proj-text-wrapper {
+    width: 19%;
+    display: inline-block;
+    padding: 20px;
+    padding-top: 0px;
+    vertical-align: top;
+}
+
+.proj-img-wrapper {
+    width: 80%;
+}
+
+.proj-img {
+    width: 100%;
+    /* float: left; */
+    padding: 30px;
+    padding-top: 0px;
+}
+
 
 .button-wrapper {
     padding: 20px;
@@ -172,6 +187,12 @@ footer {
     .signature {
     font-size: 1.2rem;
     }
+}
+
+@media only screen and (max-width: 768px) {
+.skills-container, .skills-container-images figure {
+    width: 25%;
+}
 }
 
 

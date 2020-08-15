@@ -42,67 +42,184 @@
         </section>
         <section class='about-me'>
             <a name='about'></a>
-            <h3 id='aboutme'>    
-                    About
+            <h3 id='aboutme'>
+                About
             </h3>
             <div class='about-container clearfix'>
-                <img class='pro-pic' src='folio-pic.jpeg' alt="profile picture">
-                <p id='aboutme-txt'>
-                    I'm an aspiring web developer, book-lover, news junkie, and fantasy football
-                    enthusiast.
-                    I use HTML5, CSS3, Javascript and Jquery to create web applications. Web development allows me to
-                    merge my passions of building and learning new things into exciting and intuitive designs. I'm hoping to join a team of developers and continue to learn!
-                </p>
+                <div class='about-text-container-column'>
+                    <p id='aboutme-txt'>
+                        I'm a web developer, book-lover, and fantasy football enthusiast.
+                        I love web development because it allows me to build things and be both creative and innovative.
+                        I am constantly challenged and learning new things, as I get the privelege
+                        to come up with ideas and set them into motion in the form of smooth, easy to use and easy to
+                        look-at web applications.
+                    </p>
+                </div>
+                <div class='about-pic-container-column'>
+                    <img class='pro-pic' src='folio-pic.jpg' alt="profile picture">
+                </div>
             </div>
         </section>
-        <section class='tech-used'>
+        <section class='tech-used skills-container'>
             <a name='skills'></a>
-            <h3>Skills</h3>
-            <ul class='tech-list'>
-                <li>
-                    <img class='html-img'
-                        src='tech-icons/html-logo.png'
-                        alt='HTLM Icon'>
-                    <div class='skill-caption'>HTML5</div>
-                </li>
-                <li>
-                    <img class='css-img'
-                        src='tech-icons/css-logo.png'
-                        alt='CSS Icon'>
-                        <div class='skill-caption'>CSS3</div>
-                </li>
-                <li>
-                    <img class='js-img'
-                        src='tech-icons/js-logo.png'
-                        alt='JS Icon'>
-                        <div class='skill-caption'>Javascript</div>
-                </li>
-                <li>
-                    <img class='jq-img'
-                        src='tech-icons/jquery-logo.jpg'
-                        alt='JQuery Icon'>
-                        <div class='skill-caption'>JQuery</div>
-                </li>
-            </ul>
+            <h3 class='title-skill-section'>Skills</h3>
+                <div class="skills-container-images">
+                    <figure class="skill-name">
+                        <img src="tech-icons/html-logo.png" alt="HTML 5">
+                        <figcaption>
+                            HTML 5
+                        </figcaption>
+                    </figure>
+                    <figure class="skill-name">
+                        <img src="tech-icons/css-logo.png" alt="CSS 3">
+                        <figcaption>
+                            CSS 3
+                        </figcaption>
+                    </figure>
+                    <figure class="skill-name">
+                        <img src="tech-icons/js-logo.png" alt="JavaScript">
+                        <figcaption>
+                            JavaScript
+                        </figcaption>
+                    </figure>
+                    <figure class="skill-name">
+                        <img src="tech-icons/jquery-logo.jpg" alt="JQuery">
+                        <figcaption>
+                            JQuery
+                        </figcaption>
+                    </figure>
+                    <figure class="skill-name">
+                        <img src="tech-icons/nodejs.png" alt="Node.js">
+                        <figcaption>
+                            Node.js
+                        </figcaption>
+                    </figure>
+                    <figure class="skill-name">
+                        <img src="tech-icons/express-logo.png" alt="ExpressJS">
+                        <figcaption>
+                            Express
+                        </figcaption>
+                    </figure>
+                    <figure class="skill-name">
+                        <img src="tech-icons/postgres-logo.png" alt="Postgres DB">
+                        <figcaption>
+                            MongoDB
+                        </figcaption>
+                    </figure>
+                    <figure class="skill-name">
+                        <img src="tech-icons/mocha-logo.png" alt="Mocha">
+                        <figcaption>
+                            Mocha
+                        </figcaption>
+                    </figure>
+                    <figure class="skill-name">
+                        <img src="tech-icons/chai-logo.png" alt="Chai">
+                        <figcaption>
+                            Chai
+                        </figcaption>
+                    </figure>
+                    <figure class="skill-name">
+                        <img src="tech-icons/github-logo.png" alt="Github">
+                        <figcaption>
+                            GitHub
+                        </figcaption>
+                    </figure>
+                </div>
         </section>
         <section class='my-projects'>
             <a name='portfolio'></a>
             <h3>Portfolio</h3>
+            <div class='proj-four'>
+                <div class='proj-img-wrapper'>
+                    <img class='proj-img' src='portfolio-quiz-app-screenshot.png'
+                        alt="Fantasy data screenshot incoming">
+                </div>
+                <div class='proj-text-wrapper'>
+                    <h5 class='project-title'>Fantasy Data App</h5>
+                    <p class='project-text'>FantasyData allows users to access a large database of fantasy football
+                        statistics on players
+                        on their team or for research on hopeful draft picks! The data is historical and current, and
+                        gives
+                        a macro level view
+                        of a player's performance in seasons past along with some statistics forecasting future
+                        performance.
+                        Use this to get a
+                        leg up on your leage mates!
+                    </p>
+
+                    <p class='project-text'>Technologies used: React, Node, Express, Postgres</p>
+                    <div class='button-wrapper'>
+                        <a class='port-link' href='https://github.com/christian-m-george/game-of-thrones-quiz-app'
+                            target='_blank'>Github (incoming)</a>
+                        <a class='port-link' href='https://christian-m-george.github.io/game-of-thrones-quiz-app/'
+                            target='blank'>Live (incoming)</a>
+                    </div>
+                </div>
+            </div>
+            <div class='proj-three'>
+                <div class='proj-img-wrapper'>
+                    <img class='proj-img' src='movie-forum-screenshot.png' alt="Movie Forum screenshot">
+                </div>
+                <div class='proj-text-wrapper'>
+                    <h5 class='project-title'>MovieChat App</h5>
+                    <p class='project-text'>This app allows users to communicate on movies that they're interested in!
+                        The
+                        application
+                        allows for users to search a vast database of games and communicate with other users by leaving
+                        comments on each movie.
+                        Spoilers beware!
+                    </p>
+                    <p class='project-text'>Technologies used: React, Node, Express, Postgres</p>
+                    <div class='button-wrapper'>
+                        <a class='port-link' href='https://github.com/christian-m-george/movie-forum-capstone-server'
+                            target='_blank'>Github</a>
+                        <a class='port-link' href='https://movie-forum-capstone-server.herokuapp.com/'
+                            target='blank'>Live</a>
+                    </div>
+                </div>
+            </div>
+            <div class='proj-two'>
+                <div class='proj-img-wrapper'>
+
+                    <img class='proj-img' src='game-search-screenshot.jpg' alt="Game Search Screenshot">
+                </div>
+                <div class='proj-text-wrapper'>
+                    <h5 class='project-title'>Game Search App</h5>
+                    <p class='project-text'>This is an application that allows you to quickly find out what new games
+                        are
+                        trending, and
+                        simultaneously search games you love! Searching games will allow the user to find similar games
+                        that
+                        may spark their interest!
+                    </p>
+                    <p class='project-text'>Technologies used: HTML. CSS, Javascript, jQuery</p>
+                    <div class='button-wrapper'>
+                        <a class='port-link' href='https://github.com/christian-m-george/game-search-app-api-capstone'
+                            target='_blank'>Github</a>
+                        <a class='port-link' href='https://christian-m-george.github.io/game-search-app-api-capstone/'
+                            target='blank'>Live</a>
+                    </div>
+                </div>
+            </div>
             <div class='proj-one'>
-                <h5 class='project-title'>Game of Thrones Quiz App</h5>
-                <img class='proj-img'
-                    src='portfolio-quiz-app-screenshot.png'
-                    alt="GOT Screenshot">
-                <p class='project-text'>This is an interactive quiz inspired by my love of George RR Martin's <u>Game of
-                        Thrones</u> and the fantasy world he created. This quiz is based off of the books, so it's
-                    unlikely a fan of only the HBO series would know some of these answers, but feel free to try anyway
-                    and see how you score!</p>
-                <p class='project-text'>Technologies used: HTML. CSS, Javascript, jQuery</p>
-                <div class='button-wrapper'>
-                <a class='port-link' href='https://github.com/christian-m-george/game-of-thrones-quiz-app'
-                    target='_blank'>Github</a>
-                <a class='port-link' href='https://christian-m-george.github.io/game-of-thrones-quiz-app/'
-                    target='blank'>Live</a>
+                <div class='proj-img-wrapper'>
+                    <img class='proj-img' src='portfolio-quiz-app-screenshot.png' alt="GOT Screenshot">
+                </div>
+                <div class='proj-text-wrapper'>
+                    <h5 class='project-title'>Game of Thrones Quiz App</h5>
+                    <p class='project-text'>This is an interactive quiz inspired by my love of George RR Martin's
+                        <u>Game of
+                            Thrones</u> and the fantasy world he created. This quiz is based off of the books, so it's
+                        unlikely a fan of only the HBO series would know some of these answers, but feel free to try
+                        anyway
+                        and see how you score!</p>
+                    <p class='project-text'>Technologies used: HTML. CSS, Javascript, jQuery</p>
+                    <div class='button-wrapper'>
+                        <a class='port-link' href='https://github.com/christian-m-george/game-of-thrones-quiz-app'
+                            target='_blank'>Github</a>
+                        <a class='port-link' href='https://christian-m-george.github.io/game-of-thrones-quiz-app/'
+                            target='blank'>Live</a>
+                    </div>
                 </div>
             </div>
         </section>
