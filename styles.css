@@ -19,14 +19,30 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+a {
+    text-decoration: none;
+}
+
 .clearfix::after {
     content: "";
     clear: both;
     display: table;
-  }
+}
 
 .nav-bar {
     height: 75px;
+}
+
+.nav-bar a {
+    color: rgb(85, 85, 243);
+}
+
+.nav-bar a:hover {
+    color: blue;
+}
+
+.nav-bar a:visited {
+    color:  rgb(85, 85, 243);
 }
 
 .nav-icons {
@@ -91,6 +107,7 @@ h3 {
 
 .pro-pic {
     width: 100%;
+    border-radius: 15px;
 }
 
 .hero-title {
@@ -110,14 +127,15 @@ h3 {
 }
 
 .skills-container .skills-container-images figure {
-    width: 12%;
+    width: 19%;
     display: inline-block;
     margin-bottom: 2rem;
 }
 
 .skill-name img {
     padding: 10px;
-    height: 100%;
+    height: 120px;
+    vertical-align: top;
 }
 
 
@@ -225,13 +243,10 @@ footer {
     margin: 10px 10px 10px 10px;
 }
 
-@media only screen and (min-width: 350px) {
+/* @media only screen and (min-width: 350px) {
     .nav-icons {
     font-size: 12px;
 }
-    /* .signature {
-    font-size: 12px;
-    } */
 }
 
 @media only screen and (min-width: 600px) {
@@ -241,17 +256,17 @@ footer {
     .signature {
     font-size: 1.2rem;
     }
-}
+} */
 
 @media only screen and (max-width: 768px) {
-.skills-container, .skills-container-images figure {
-    width: 25%;
+.skills-container .skills-container-images figure {
+    width: 32%;
 }
 }
 
-@media only screen and (max-width: 500px) {
-    .skills-container, .skills-container-images figure {
-        width: 18%;
+@media only screen and (max-width: 480px) {
+    .skills-container .skills-container-images figure {
+        width: 49%;
 }
 }
 
