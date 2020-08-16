@@ -51,7 +51,7 @@ a {
     float: right;
     margin: 5px;
     padding-top: 20px;
-    font-size: 10px;
+    /* font-size: 10px; */
 }
 
 .nav-icons li {
@@ -62,7 +62,7 @@ a {
     float: left;
     font-family: 'Kaushan Script', cursive, sans-serif;
     font-size: .8rem;
-    /* font-size: 20px; */
+    font-size: 20px;
 }
 
 .hero-image {
@@ -259,15 +259,21 @@ footer {
 } */
 
 @media only screen and (max-width: 768px) {
-.skills-container .skills-container-images figure {
-    width: 32%;
-}
+    .about-pic-container-column, .about-text-container-column {
+        width: 39%;
+    }
+    .about-text-container-column {
+        width: 60%;
+    }
+    .skills-container .skills-container-images figure {
+        width: 32%;
+    }
 }
 
 @media only screen and (max-width: 480px) {
     .skills-container .skills-container-images figure {
         width: 49%;
-}
+    }
 }
 
 /* @media only screen and (max-width: 500px) {
