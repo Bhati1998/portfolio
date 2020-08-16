@@ -117,12 +117,13 @@ h3 {
 
 .skill-name img {
     padding: 10px;
+    height: 100%;
 }
 
 
-.postgres-img, .express-img {
+/* .postgres-img, .express-img {
     width: 100%;
-}
+} */
 
 figcaption {
     margin-top: 1rem;
@@ -134,8 +135,10 @@ figcaption {
 }
 
 .project-title {
-    margin-bottom: 1.5rem;
     font-weight: bolder;
+    padding: 5px;
+    margin-bottom: 1.5rem;
+    border-bottom: 1px solid black;
 }
 
 .proj-img-wrapper, .proj-text-wrapper {
@@ -157,11 +160,48 @@ figcaption {
     padding-top: 0px;
 }
 
+.tech-list {
+    margin-top: 1rem;
+    display: inline-block;
+}
+
+.tech-name {
+    display: inline-block;
+    padding: 4px;
+    border: 1px solid black;
+    margin: 20px 5px;
+    background-color: white;
+}
 
 .button-wrapper {
     padding: 20px;
+    margin-top: 20px;
     margin-bottom: 20px;
-    display: inline-block;
+    display: block;
+    width: 100%;
+}
+
+
+
+.button-wrapper a {
+    background-color: #3485E2;
+    text-decoration: none;
+    color: white;
+    font-size: 1.2em;
+    width: auto;
+    display:inline-block;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 3px;
+    margin-bottom: 1%;
+}
+
+.button-wrapper a:hover {
+    background-color: blue;
+}
+
+.button-wrapper a:visited {
+    color: #eee;
 }
 
 .contact-form {
@@ -208,5 +248,18 @@ footer {
     width: 25%;
 }
 }
+
+@media only screen and (max-width: 500px) {
+    .skills-container, .skills-container-images figure {
+        width: 18%;
+}
+}
+
+/* @media only screen and (max-width: 500px) {
+    .proj-block {
+        display: flex;
+        flex-direction: column;
+}
+} */
 
 
