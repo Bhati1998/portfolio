@@ -42,11 +42,11 @@ a {
 }
 
 .nav-bar a:visited {
-    color:  rgb(85, 85, 243);
+    color: rgb(85, 85, 243);
 }
 
 .nav-icons {
-    display: flex;
+    display: inline-block;
     list-style: none;
     float: right;
     margin: 5px;
@@ -55,11 +55,15 @@ a {
 }
 
 .nav-icons li {
-    padding-right: 7px;
+    display: inline-block;
+    padding-right: 12px;
 }
 
+.signature-wrapper {
+    display: inline-block;
+    width: auto;
+}
 .signature {
-    float: left;
     font-family: 'Kaushan Script', cursive, sans-serif;
     font-size: .8rem;
     font-size: 20px;
@@ -89,7 +93,8 @@ h3 {
     padding: 20px;
 }
 
-.about-pic-container-column, .about-text-container-column {
+.about-pic-container-column,
+.about-text-container-column {
     width: 19%;
     display: inline-block;
     padding: 20px;
@@ -101,7 +106,9 @@ h3 {
     width: 80%;
 }
 
-.about-me, .tech-used, .my-projects {
+.about-me,
+.tech-used,
+.my-projects {
     text-align: center;
 }
 
@@ -138,17 +145,13 @@ h3 {
     vertical-align: top;
 }
 
-
-/* .postgres-img, .express-img {
-    width: 100%;
-} */
-
 figcaption {
     margin-top: 1rem;
     margin-bottom: 1rem;
 }
 
-.about-me, .my-projects {
+.about-me,
+.my-projects {
     background: lightgray;
 }
 
@@ -159,16 +162,13 @@ figcaption {
     border-bottom: 1px solid black;
 }
 
-.proj-img-wrapper, .proj-text-wrapper {
+.proj-img-wrapper,
+.proj-text-wrapper {
     width: 49%;
     display: inline-block;
     padding: 20px;
     padding-top: 0px;
     vertical-align: top;
-}
-
-.proj-img-wrapper {
-    width: 49%;
 }
 
 .proj-img {
@@ -199,15 +199,13 @@ figcaption {
     width: 100%;
 }
 
-
-
 .button-wrapper a {
     background-color: #3485E2;
     text-decoration: none;
     color: white;
     font-size: 1.2em;
     width: auto;
-    display:inline-block;
+    display: inline-block;
     padding: 10px 30px;
     border: none;
     border-radius: 3px;
@@ -236,51 +234,119 @@ footer {
     background: lightgray;
 }
 
-.linkedin-icon, .github-icon {
+.linkedin-icon,
+.github-icon {
     color: black;
     font-size: 30px;
     padding: 10px;
     margin: 10px 10px 10px 10px;
 }
 
-/* @media only screen and (min-width: 350px) {
-    .nav-icons {
-    font-size: 12px;
-}
-}
+/* media queries */
 
-@media only screen and (min-width: 600px) {
-    .nav-icons {
-    font-size: 18px;
-}
-    .signature {
-    font-size: 1.2rem;
+/*large desktop*/
+@media only screen and (max-width: 1600px) {
+    body {
+        border: 3px solid yellow;
     }
-} */
+    .skills-container .skills-container-images figure {
+        width: 16%;
+    }
+}
 
+/*iPad lanscape / small laptop*/
+@media only screen and (max-width: 1024px) {
+    body {
+        border: 3px solid blue;
+    }
+    .skills-container .skills-container-images figure {
+        width: 24%;
+    }
+}
+
+/*iPad potrait*/
 @media only screen and (max-width: 768px) {
-    .about-pic-container-column, .about-text-container-column {
-        width: 39%;
+    body {
+        border: 3px solid red;
     }
+
+    .about-pic-container-column,
     .about-text-container-column {
-        width: 60%;
+        width: 29%;
+    }
+
+    .about-text-container-column {
+        width: 70%;
+    }
+
+    .skills-container .skills-container-images figure {
+        width: 32%;
+    }
+
+    .proj-img-wrapper,
+    .proj-text-wrapper {
+        width: 100%;
+        display: block;
+    }
+}
+
+/*Android landscape*/
+@media only screen and (max-width: 640px) {
+    body {
+        border: 3px solid brown;
+    }
+    .nav-icons li {
+        display: inline-block;
+        padding-right: 3px;
+        font-size: 95%;
     }
     .skills-container .skills-container-images figure {
         width: 32%;
     }
-}
+    .about-pic-container-column,
+    .about-text-container-column {
+        width: 39%;
+    }
 
-@media only screen and (max-width: 480px) {
-    .skills-container .skills-container-images figure {
-        width: 49%;
+    .about-text-container-column {
+        width: 60%;
     }
 }
 
-/* @media only screen and (max-width: 500px) {
-    .proj-block {
-        display: flex;
-        flex-direction: column;
+/*iPhone landscape*/
+@media only screen and (max-width: 480px) {
+    body {
+        border: 3px solid green;
+    }
+    .nav-icons li {
+        padding-right: 10px;
+        font-size: 120%;
+    }
+    .nav-text {
+        display: none;
+    }
+    .skills-container .skills-container-images figure {
+        width: 49%;
+    }
+    .about-pic-container-column,
+    .about-text-container-column {
+        display: block;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .about-text-container-column {
+        width: 80%;
+    }
 }
-} */
 
-
+/*iPhone portrait*/
+@media only screen and (max-width: 320px) {
+    body {
+        border: 3px solid purple;
+    }
+    .skills-container .skills-container-images figure {
+        width: 99%;
+    }
+}
