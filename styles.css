@@ -265,9 +265,9 @@ footer {
 
 /*large desktop*/
 @media only screen and (max-width: 1600px) {
-    body {
+    /* body {
         border: 3px solid yellow;
-    }
+    } */
     .skills-container .skills-container-images figure {
         width: 16%;
     }
@@ -275,9 +275,9 @@ footer {
 
 /*iPad lanscape / small laptop*/
 @media only screen and (max-width: 1024px) {
-    body {
+    /* body {
         border: 3px solid blue;
-    }
+    } */
     .skills-container .skills-container-images figure {
         width: 24%;
     }
@@ -285,9 +285,9 @@ footer {
 
 /*iPad potrait*/
 @media only screen and (max-width: 768px) {
-    body {
+    /* body {
         border: 3px solid red;
-    }
+    } */
 
     .about-pic-container-column,
     .about-text-container-column {
@@ -311,9 +311,9 @@ footer {
 
 /*Android landscape*/
 @media only screen and (max-width: 640px) {
-    body {
+    /* body {
         border: 3px solid brown;
-    }
+    } */
     .nav-icons li {
         display: inline-block;
         padding-right: 3px;
@@ -342,9 +342,9 @@ footer {
 
 /*iPhone landscape*/
 @media only screen and (max-width: 480px) {
-    body {
+    /* body {
         border: 3px solid green;
-    }
+    } */
     .nav-icons li {
         padding-right: 10px;
         font-size: 120%;
@@ -367,15 +367,14 @@ footer {
         width: 80%;
     }
     .tech-name {
-        margin-bottom: .5px;
-    }
+        margin: 10px .5px .5px .5px;    }
 }
 
 /*iPhone portrait*/
 @media only screen and (max-width: 320px) {
-    body {
+    /* body {
         border: 3px solid purple;
-    }
+    } */
     .skills-container .skills-container-images figure {
         width: 99%;
     }
