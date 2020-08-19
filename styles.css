@@ -82,6 +82,14 @@ h3 {
     padding: 20px;
 }
 
+.section-title {
+    font-size: 24px;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    padding: 12px;
+    margin-bottom: 12px;
+}
+
 .about-me {
     margin-top: 0px;
     margin-bottom: 10px;
@@ -150,6 +158,19 @@ figcaption {
     margin-bottom: 1rem;
 }
 
+.tech-list {
+    margin-top: 1rem;
+    display: inline-block;
+}
+
+.tech-name {
+    display: inline-block;
+    padding: 4px;
+    border: 1px solid black;
+    margin: 20px 5px;
+    background-color: white;
+}
+
 .about-me,
 .my-projects {
     background: lightgray;
@@ -167,7 +188,7 @@ figcaption {
     width: 49%;
     display: inline-block;
     padding: 20px;
-    padding-top: 0px;
+    padding-top: 20px;
     vertical-align: top;
 }
 
@@ -178,16 +199,7 @@ figcaption {
     padding-top: 0px;
 }
 
-.tech-list {
-    margin-top: 1rem;
-    display: inline-block;
-}
-
-.tech-name {
-    display: inline-block;
-    padding: 4px;
-    border: 1px solid black;
-    margin: 20px 5px;
+.proj-even {
     background-color: white;
 }
 
@@ -222,16 +234,23 @@ figcaption {
 
 .contact-form {
     text-align: center;
-    margin-bottom: 20px;
+    /* padding: 15px; */
+    /* margin-bottom: 20px; */
+    
     margin-left: auto;
     margin-right: auto;
+    background-color: lightgrey;
+}
+
+.contact-text {
+    padding: 12px;
 }
 
 footer {
     display: flex;
     justify-content: center;
     height: 75px;
-    background: lightgray;
+    background-color: lightgrey;
 }
 
 .linkedin-icon,
@@ -311,6 +330,14 @@ footer {
     .about-text-container-column {
         width: 60%;
     }
+    .proj-img-wrapper, .proj-text-wrapper {
+        padding: 10px 5px 5px 10px;
+        vertical-align: top;
+    }
+    .proj-img {
+        width: 100%;
+        padding: 0px;
+    }
 }
 
 /*iPhone landscape*/
@@ -338,6 +365,9 @@ footer {
 
     .about-text-container-column {
         width: 80%;
+    }
+    .tech-name {
+        margin-bottom: .5px;
     }
 }
 
